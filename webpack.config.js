@@ -1,10 +1,11 @@
-// Based on the configuration included with
+// Originally based on the configuration included with
 // https://github.com/roman01la/react-native-babel
 // by Roman Liutikov
 
 var webpack = require('webpack');
 var path = require('path');
 var AnyBarWebpackPlugin = require('anybar-webpack');
+var NyanProgressPlugin = require('nyan-progress-webpack-plugin');
 
 module.exports = {
   watch: true,
@@ -37,6 +38,7 @@ module.exports = {
   resolve: { extensions: ['', '.js', '.jsx', '.es6'] },
   plugins: [
     new webpack.NoErrorsPlugin(),
-    new AnyBarWebpackPlugin()
+    new AnyBarWebpackPlugin(),
+    new NyanProgressPlugin()
   ],
 };
