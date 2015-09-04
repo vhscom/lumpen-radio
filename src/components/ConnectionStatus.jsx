@@ -34,6 +34,14 @@ let localizedStatus = new LocalizedStrings({
     error: "Tippe oben lange um neu zu starten.",
     disconnected: "Verbinde dich mit dem Internet um zu hören."
   },
+  ko: {
+    playing: "본 동영상은 광고 없이 재생됩니다",
+    paused: "계속 들으시려면 윗부분을 터치해주세요",
+    stopped: "청취하시려면 윗부분을 눌러주세요",
+    buffering: "버퍼링 중, 잠시만 기다려주세요",
+    error: "다시 시작하시려면 위쪽을 길게 눌러주세요",
+    disconnected: "인터넷을 연결하셔야 들을 수 있습니다."
+  },
   "zh-Hans": {
     playing: "现正播放无广告时段！",
     paused: "按上面来继续收听。",

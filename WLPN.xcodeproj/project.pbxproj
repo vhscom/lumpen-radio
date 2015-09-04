@@ -145,6 +145,7 @@
 		DD3B4C341AFDC76C00BCD40D /* libPods-StreamingKit.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-StreamingKit.a"; path = "Pods/../build/Debug-iphoneos/libPods-StreamingKit.a"; sourceTree = "<group>"; };
 		DD3C9D051B57680E00885527 /* RootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RootViewController.swift; path = iOS/Classes/RootViewController.swift; sourceTree = "<group>"; };
 		DD3C9D071B57693E00885527 /* WLPN-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "WLPN-Bridging-Header.h"; path = "iOS/WLPN-Bridging-Header.h"; sourceTree = "<group>"; };
+		DD99FA6C1B9A152800C44180 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
 		DDB119C01B20C29300589B94 /* Akkurat-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Akkurat-Regular.otf"; path = "iOS/Resources/Akkurat-Regular.otf"; sourceTree = "<group>"; };
 		DDE7251D1B02BD0900AA769D /* RCTVideo.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTVideo.xcodeproj; path = "node_modules/react-native-video/RCTVideo.xcodeproj"; sourceTree = "<group>"; };
 		DDE7252E1B02C17100AA769D /* turntable-loop-1920x500-h264-512kbps-h264.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = "turntable-loop-1920x500-h264-512kbps-h264.mp4"; path = "src/assets/videos/turntable-loop-1920x500-h264-512kbps-h264.mp4"; sourceTree = "<group>"; };
@@ -465,6 +466,7 @@
 				de,
 				es,
 				zh,
+				ko,
 			);
 			mainGroup = 83CBB9F61A601CBA00E9B192;
 			productRefGroup = 83CBBA001A601CBA00E9B192 /* Products */;
@@ -707,6 +709,7 @@
 				DDF941261B74001E007A3B75 /* de */,
 				DDF941281B740032007A3B75 /* es */,
 				DDF941291B740431007A3B75 /* zh */,
+				DD99FA6C1B9A152800C44180 /* ko */,
 			);
 			name = Localizable.strings;
 			path = iOS;
