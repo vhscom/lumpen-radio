@@ -37,9 +37,9 @@ Never listen to a radio commercial again. The free [Lumpen Radio app](https://ap
 
     **Note:** If, no when, you run into problems with the Pod installation please review [CocoaPods Troubleshooting](https://guides.cocoapods.org/using/troubleshooting.html) and pay special attetion to any error messages received during the Pod installation.
 
-3. Run `npm start` to start the Webpack watcher and the React Packager in a single shot.
+3. Run `npm start` to start the Webpack watcher, Webpack Dev Server and the React Packager in a single shot.
 
-   **Note:** The Webpack watcher builds the `index.ios.js` file expected by React Native.
+   **Note:** The Webpack watcher builds the `index.[platform].js` file expected by React Native.
 
 4. Open `WLPN.xcworkspace` in XCode and run the project.
 
@@ -57,7 +57,8 @@ To learn more about React Native and how this app is built check out [the slides
 
 ## File Structure
 
-    ├── iOS                         # Source code
+    ├── android                     # Source code for Android
+    ├── iOS                         # Source code for iOS
     │   ├── Classes                 # Objective-C, Swift classes
     │   │   ├── AppDelegate         # Application initialization and React Native config
     │   │   ├── AudioManager        # Lib to access platform APIs and bridge to JS
