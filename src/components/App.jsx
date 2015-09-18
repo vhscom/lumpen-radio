@@ -15,6 +15,7 @@ let {
   View,
   Text,
   Image,
+  Animated,
   StatusBarIOS,
   TouchableOpacity,
   DeviceEventEmitter
@@ -24,7 +25,10 @@ export default React.createClass({
   mixins: [Reflux.connect(Messages, 'message'), tweenState.Mixin],
 
   getInitialState() {
-    return { status: 'STOPPED' };
+    return {
+      status: 'STOPPED',
+      bounceValue: new Animated.Value(0)
+    };
   },
 
   componentDidMount() {
@@ -36,11 +40,23 @@ export default React.createClass({
     AudioPlayer.getStatus((error, status) => {
       (error) ? console.log(error) : this.setState(status)
     });
+
+    // Animate the Connection Status
     this.tweenState('opacity', {
       beginValue: 0,
       endValue: 1,
       duration: 1000
     });
+
+    // Animate the Logo image
+    this.state.bounceValue.setValue(0.05);    // Start small
+    Animated.spring(                          // Base: spring, decay, timing
+      this.state.bounceValue,                 // Animate `bounceValue`
+      {
+        toValue: 1,                           // Animate to original size
+        tension: 70                           // Spring with default tension
+      }
+    ).start();
   },
 
   render() {
@@ -60,8 +76,12 @@ export default React.createClass({
         <TouchableOpacity
           onPress={Actions.updateMessage, this._onPressLogo}
           onLongPress={this._onLongPressLogo}>
-          <Image
-            style={styles.appLogo}
+          <Animated.Image
+            style={[styles.appLogo, {
+              transform: [
+                {scale: this.state.bounceValue}
+              ]
+            }]}
             source={require('image!RadioButton')} />
         </TouchableOpacity>
 

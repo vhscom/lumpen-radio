@@ -43,6 +43,14 @@ Never listen to a radio commercial again. The free [Lumpen Radio app](https://ap
 
 4. Open `WLPN.xcworkspace` in XCode and run the project.
 
+## Bundling for distribution
+
+1. Run `npm run bundle` to generate a bundled version of your JS.
+2. Update `AppDelegate.m` to load from pre-bundled file on disk.
+3. Test the application and then submit it to the store.
+
+Learn more about [Submitting to App Store](https://vhs.codeberg.page/reflecting-on-react-native-development/#submitting-to-app-store).
+
 ## Digging in
 
 To learn more about React Native and how this app is built check out [the slides](https://slides.com/vhs/streaming-audio-react-native/) originating from [my talk](https://www.meetup.com/React-Chicago/events/222510246/) on <time datetime="2015-06-30 18:00">30 Jun 2015</time>. Additional materials will become available following a [free Webcast](https://www.oreilly.com/pub/e/3483) offered in partnership with O'Reilly Media (scheduled <time datetime="2015-08-27 18:00">27 Aug 2015</time>).
@@ -111,8 +119,8 @@ To learn more about React Native and how this app is built check out [the slides
 
 Developed for Public Media Institute by VHS.
 
-Artwork by Jermiah Chiu.
-App interface and icon by VHS.
+Artwork by [Jermiah Chiu](https://weareplural.com/).
+App interface and icon by [VHS](https://vhs.codeberg.page).
 
 Turntable loop video by [Scott Schiller](https://www.scottschiller.com/), BSD.
 

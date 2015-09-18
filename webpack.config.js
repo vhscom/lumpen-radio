@@ -1,15 +1,19 @@
-// Originally based on the configuration included with
-// https://github.com/roman01la/react-native-babel
-// by Roman Liutikov
-
 var webpack = require('webpack');
 var path = require('path');
 var AnyBarWebpackPlugin = require('anybar-webpack');
-var NyanProgressPlugin = require('nyan-progress-webpack-plugin');
 
 module.exports = {
+  debug: true,
+  devtool: 'source-map',
   watch: true,
-  entry: path.join(__dirname, '/src/main.es6'),
+  entry: {
+    'index.ios': ['./src/main.ios.es6'],
+    'index.android': ['./src/main.android.jsx']
+  },
+  output: {
+    path: path.resolve(__dirname, 'build'),
+    filename: '[name].js',
+  },
   module: {
     loaders: [
       {
@@ -29,16 +33,9 @@ module.exports = {
       }
     ]
   },
-  output: {
-    path: path.join(__dirname, '/'),
-    filename: 'index.ios.js',
-    libraryTarget: 'commonjs'
-  },
-  externals: [require('./ignored-modules')],
   resolve: { extensions: ['', '.js', '.jsx', '.es6'] },
   plugins: [
     new webpack.NoErrorsPlugin(),
     new AnyBarWebpackPlugin(),
-    new NyanProgressPlugin()
   ],
 };

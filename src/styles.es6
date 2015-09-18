@@ -13,8 +13,9 @@ export default StyleSheet.create({
   appLogo: {
     width: 250,
     height: 300,
-    marginTop: 20,
-    marginBottom: 20,
+    marginTop: 30,
+    marginBottom: 30,
+    padding: 5,
     borderRadius: 14,
     backgroundColor: 'white',
     opacity: 0.7,
