@@ -43,11 +43,10 @@ Never listen to a radio commercial again. The free [Lumpen Radio app](https://ap
 
 4. Open `WLPN.xcworkspace` in XCode and run the project.
 
-## Bundling for app distribution
+## Bundling for distribution
 
-1. Run `npm start` to generate a bundled version of your JS.
-2. Update `AppDelegate.m` to load from pre-bundled file on disk.
-3. Run the `curl` statement shown in the pre-bundled code comments.
+1. Execute `npm run bundle` to generate the [offline JS bundle](https://facebook.github.io/react-native/docs/running-on-device-ios.html#using-offline-bundle).
+2. For iOS, update `AppDelegate.m` to load from pre-bundled file on disk.
 3. Test the application, create an archive and submit to the store.
 
 Learn more about [Submitting to App Store](https://vhs.codeberg.page/reflecting-on-react-native-development/#submitting-to-app-store).

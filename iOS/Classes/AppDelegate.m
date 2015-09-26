@@ -31,12 +31,12 @@
    * Load from pre-bundled file on disk. To re-generate the static bundle
    * from the root of your project directory, run
    *
-   * $ curl 'https://localhost:8080/index.ios.bundle?dev=false&minify=true' -o iOS/main.jsbundle
+   * $ npm run bundle
    *
    * see https://facebook.github.io/react-native/docs/runningondevice.html
    */
 
-   // jsCodeLocation = [[NSBundle mainBundle] URLForResource:@"main" withExtension:@"jsbundle"];
+//  jsCodeLocation = [[NSBundle mainBundle] URLForResource:@"main" withExtension:@"jsbundle"];
 
   RCTRootView *rootView = [[RCTRootView alloc] initWithBundleURL:jsCodeLocation
                                                       moduleName:@"WLPN"
