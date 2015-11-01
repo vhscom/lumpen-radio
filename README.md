@@ -3,11 +3,10 @@
 [![Stack Share](https://img.shields.io/badge/tech-stack-0690fa.svg?style=flat)](https://stackshare.io/vhs/lumpen-radio)
 [![Dependency Status](https://david-dm.org/vhs/lumpen-radio.svg)](https://david-dm.org/vhs/lumpen-radio)
 [![devDependency Status](https://david-dm.org/vhs/lumpen-radio/dev-status.svg)](https://david-dm.org/vhs/lumpen-radio#info=devDependencies)
-[![Tips](https://img.shields.io/gratipay/vhs.svg)](https://gratipay.com/vhs)
 
 Never listen to a radio commercial again. The free [Lumpen Radio app](https://appsto.re/us/NdeV7.i) is here!
 
-![WLPN neon artowrk](https://github.com/vhs/lumpen-radio/blob/master/photo-original.jpg)
+![WLPN neon artwork](https://github.com/vhs/lumpen-radio/blob/master/photo-original.jpg)
 
 ## Features
 
@@ -27,6 +26,8 @@ Never listen to a radio commercial again. The free [Lumpen Radio app](https://ap
 - If the app crashes for any reason please close and reopen it
 
 ## Getting started
+
+Looking to build your own React Native project with ES6/7? Check out my [React Native Starter Kit](https://github.com/vhs/react-native-webpack-starter-kit). Otherwise proceed enthusiastically.
 
 1. Clone this project.
 2. Install dependencies.
