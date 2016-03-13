@@ -1,8 +1,6 @@
 # WLPN 105.5 FM Lumpen Radio Chicago
 
 [![Stack Share](https://img.shields.io/badge/tech-stack-0690fa.svg?style=flat)](https://stackshare.io/vhs/lumpen-radio)
-[![Dependency Status](https://david-dm.org/vhs/lumpen-radio.svg)](https://david-dm.org/vhs/lumpen-radio)
-[![devDependency Status](https://david-dm.org/vhs/lumpen-radio/dev-status.svg)](https://david-dm.org/vhs/lumpen-radio#info=devDependencies)
 
 Never listen to a radio commercial again. The free [Lumpen Radio app](https://appsto.re/us/NdeV7.i) is here!
 
