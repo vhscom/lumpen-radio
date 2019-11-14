@@ -271,14 +271,16 @@ RCT_EXPORT_METHOD(getStatus: (RCTResponseSenderBlock) callback)
   commandCenter.previousTrackCommand.enabled = NO;
 }
 
-- (void)didReceivePlayCommand:(MPRemoteCommand *)event
+- (MPRemoteCommandHandlerStatus)didReceivePlayCommand:(MPRemoteCommand *)event
 {
   [self play];
+  return MPRemoteCommandHandlerStatusSuccess;
 }
 
-- (void)didReceivePauseCommand:(MPRemoteCommand *)event
+- (MPRemoteCommandHandlerStatus)didReceivePauseCommand:(MPRemoteCommand *)event
 {
   [self pause];
+  return MPRemoteCommandHandlerStatusSuccess;
 }
 
 - (void)unregisterRemoteControlEvents

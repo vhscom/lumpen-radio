@@ -28,7 +28,7 @@ Never listen to a radio commercial again. The free [Lumpen Radio app](https://ap
 
 ## Development
 
-Looking to build your own React Native project with ES6/7? Check out my [React Native Starter Kit](https://github.com/vhs/react-native-webpack-starter-kit). Otherwise proceed enthusiastically.
+Looking to build your own React Native project with ES6/7? Check out my [React Native Starter Kit](https://codeberg.org/vhs/react-native-webpack-starter-kit). Otherwise proceed enthusiastically.
 
 1. Clone this project.
 2. Install dependencies.
