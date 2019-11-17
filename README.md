@@ -114,7 +114,7 @@ To learn more about React Native and how this app is built check out [the slides
 
 ## Credits
 
-Developed for Public Media Institute by VHS.
+Developed without fee for Public Media Institute by VHS.
 
 Artwork by [Jermiah Chiu](https://weareplural.com/).
 App interface and icon by [VHS](https://vhs.codeberg.page).
