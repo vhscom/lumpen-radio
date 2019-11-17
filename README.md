@@ -2,7 +2,7 @@
 
 Never listen to a radio commercial again. The free [Lumpen Radio app](https://appsto.re/us/NdeV7.i) is here!
 
-![WLPN neon artwork](https:///codeberg.org/vhs/lumpen-radio/raw/branch/master-backup/photo-original.jp)
+![WLPN neon artwork](https://codeberg.org/vhs/lumpen-radio/raw/branch/trunk/photo-original.jpg)
 
 ## Features
 
