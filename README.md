@@ -1,10 +1,8 @@
 # WLPN 105.5 FM Lumpen Radio Chicago
 
-[![Stack Share](https://img.shields.io/badge/tech-stack-0690fa.svg?style=flat)](https://stackshare.io/vhs/lumpen-radio)
-
 Never listen to a radio commercial again. The free [Lumpen Radio app](https://appsto.re/us/NdeV7.i) is here!
 
-![WLPN neon artwork](https:///codeberg.org/vhs/lumpen-radio/raw/branch/master-backup/photo-original.jpg)
+![WLPN neon artwork](https:///codeberg.org/vhs/lumpen-radio/raw/branch/master-backup/photo-original.jp)
 
 ## Features
 
