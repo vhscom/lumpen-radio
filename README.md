@@ -4,10 +4,14 @@ Never listen to a radio commercial again. The free [Lumpen Radio app](https://ap
 
 ![Lumpen Radio](https://codeberg.org/vhs/lumpen-radio/raw/branch/trunk/app-cover-fs8.png "Application simulated in iOS 13")
 
+## About
+
+- Built with [React Native](https://facebook.github.io/react-native/) and [Webpack](https://webpack.js.org/)
+- Created using [React Native Webpack Starter Kit](https://vhs.codeberg.page/code/react-native-webpack-starter-kit)
+
 ## Features
 
-- Built with React Native and Webpack
-- Streams WLPN-LP 105.5 FM Lumpen Radio Chicago
+- Streams any `audio/mpeg` stream listed in `Constants.h`
 - Background audio playback and lock screen integration
 - Gorgeous video loop with AirPlay support
 - Intelligent handling of common audio interruptions
@@ -22,7 +26,7 @@ Never listen to a radio commercial again. The free [Lumpen Radio app](https://ap
 - Long-pressing the radio button restarts the audio
 - If the app crashes for any reason please close and reopen it
 
-## Getting started
+## Development
 
 Looking to build your own React Native project with ES6/7? Check out my [React Native Starter Kit](https://github.com/vhs/react-native-webpack-starter-kit). Otherwise proceed enthusiastically.
 
@@ -40,7 +44,7 @@ Looking to build your own React Native project with ES6/7? Check out my [React N
 
 4. Open `WLPN.xcworkspace` in XCode and run the project.
 
-## Bundling for distribution
+### Bundling for distribution
 
 1. Execute `npm run bundle` to generate the [offline JS bundle](https://facebook.github.io/react-native/docs/running-on-device-ios.html#using-offline-bundle).
 2. For iOS, update `AppDelegate.m` to load from pre-bundled file on disk.
@@ -48,11 +52,7 @@ Looking to build your own React Native project with ES6/7? Check out my [React N
 
 Learn more about [Submitting to App Store](https://vhs.codeberg.page/reflecting-on-react-native-development/#submitting-to-app-store).
 
-## Digging in
-
-To learn more about React Native and how this app is built check out [the slides](https://slides.com/vhs/streaming-audio-react-native/) originating from [my talk](https://www.meetup.com/React-Chicago/events/222510246/) on <time datetime="2015-06-30 18:00">30 Jun 2015</time>. There's also a [free Webcast](https://www.oreilly.com/pub/e/3483) on app construction given for O'Reilly Media on <time datetime="2015-08-27 18:00">27 Aug 2015</time>.
-
-## File Structure
+### File structure
 
     ├── android                     # Source code for Android
     ├── iOS                         # Source code for iOS
@@ -87,6 +87,10 @@ To learn more about React Native and how this app is built check out [the slides
     ├── webpack-watch.js            # Filesystem watcher for JS
     └── webpack-config.js           # WebPack configuration
 
+### Resources
+
+To learn more about React Native and how this app is built check out [the slides](https://slides.com/vhs/streaming-audio-react-native/) originating from [my talk](https://www.meetup.com/React-Chicago/events/222510246/) on <time datetime="2015-06-30 18:00">30 Jun 2015</time>. There's also a [free Webcast](https://www.oreilly.com/pub/e/3483) on app construction given for O'Reilly Media on <time datetime="2015-08-27 18:00">27 Aug 2015</time>.
+
 ## Todo
 
 - [x] Add background playback support
@@ -96,32 +100,33 @@ To learn more about React Native and how this app is built check out [the slides
 - [x] Automatically reconnect if disconnected
 - [x] Icon long-press restarts stream
 - [x] Support Control Center / Remote Control events (thanks to Wayne Wright for the suggestion)
-- [ ] Integrate push notifications
+- [ ] Add [Expo](https://expo.io/) and [TypeScript](https://www.typescriptlang.org/) support
+- [ ] Reverse proxy audio using TLS with [Traefik](https://traefik.io/)
 
 # Ideas
 
-- [ ] Long-pauses restart stream
-- [ ] Add now playing metadata (if available)
-- [ ] Provide on-air/off-air indication
+- [ ] Press-and-hold button open modal after 1st stream restart
+- [ ] Long-pauses restart stream or select a back-up stream
+- [ ] Add now playing metadata (if available) from stream `http` headers
+- [ ] Provide on-air/off-air indication (stop animation if signal off-air)
 
 ## Known issues
 
 - [x] [Background video delays device wake then turns black](https://github.com/brentvatne/react-native-video/issues/44).
 - [x] Audio stream does not automatically restart after some device interruptions (e.g. incoming call sent to voice mail)
-- [ ] Audio buffer out after 20 seconds of interrupted call time followed by 20 seconds of play
+- [ ] Audio buffer out after 20 seconds of interrupted call time followed by 20 seconds of resumed play
 - [ ] Play button does not function when disconnected from the Internet
 - [ ] App appears to buffer indefinitely if playing and Internet connection restarted
 - [x] Launch screen skews on iPad
 
 ## Credits
 
-Developed by VHS without fee for Public Media Institute.
+Designed and developed by VHS without fee for Public Media Institute.
 
-Artwork by Jermiah Chiu.<br>
+Splash screen and vectors by [Jermiah Chiu](https://jeremiahchiu.com).<br>
 App interface and icon by [VHS](https://vhs.codeberg.page).
 
-Turntable loop video by [Scott Schiller](https://www.scottschiller.com/), BSD.
-
+Turntable loop video by [Scott Schiller](https://www.scottschiller.com/), BSD and used with permission.<br>
 Inspired by [open source work](https://github.com/stetro/domradio-ios/) by Steffen Tröster.
 
 Many thanks to [Public Media Institute](https://www.publicmediainstitute.com/), [Lumpen Radio](https://www.lumpenradio.com) and all the wonderful beta testers for helping make this happen. You are beautiful.
