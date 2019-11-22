@@ -66,6 +66,7 @@ Learn more about [Submitting to App Store](https://vhs.codeberg.page/reflecting-
     │   ├── Info.plist              # Project configuration
     │   ├── main.jsbundle           # React Native placeholder file
     │   └── main.m                  # Application entry point
+    ├── packages/skipr              # StreamingKit Reverse Proxy (AGPLv3)
     ├── src                         # Source code
     │   ├── assets                  # Static resources
     │   │   └── videos              # Video assets
