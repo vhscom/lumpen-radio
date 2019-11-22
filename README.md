@@ -1,11 +1,12 @@
 # WLPN 105.5 FM Lumpen Radio Chicago
 
-Never listen to a radio commercial again. The free [Lumpen Radio app](https://appsto.re/us/NdeV7.i) is here!
+Never listen to a radio commercial again. The free [Lumpen Radio app](https://appsto.re/us/NedV7.i) is here!
 
-![WLPN neon artwork](https://codeberg.org/vhs/lumpen-radio/raw/branch/trunk/photo-original.jpg)
+![Lumpen Radio](https://codeberg.org/vhs/lumpen-radio/raw/branch/trunk/app-cover-fs8.png "Application simulated in iOS 13")
 
 ## Features
 
+- Built with React Native and Webpack
 - Streams WLPN-LP 105.5 FM Lumpen Radio Chicago
 - Background audio playback and lock screen integration
 - Gorgeous video loop with AirPlay support
@@ -114,9 +115,9 @@ To learn more about React Native and how this app is built check out [the slides
 
 ## Credits
 
-Developed without fee for Public Media Institute by VHS.
+Developed by VHS without fee for Public Media Institute.
 
-Artwork by [Jermiah Chiu](https://weareplural.com/).
+Artwork by Jermiah Chiu.<br>
 App interface and icon by [VHS](https://vhs.codeberg.page).
 
 Turntable loop video by [Scott Schiller](https://www.scottschiller.com/), BSD.
