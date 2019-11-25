@@ -105,7 +105,7 @@ To learn more about React Native and how this app is built check out [the slides
 
 - [ ] Add [Expo](https://expo.io/) and [TypeScript](https://www.typescriptlang.org/) support
 
-# Ideas
+## Ideas
 
 - [ ] Long-press opens modal with stream restart
 - [ ] Long-pauses restart stream or select target
