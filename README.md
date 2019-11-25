@@ -137,3 +137,7 @@ Many thanks to [Public Media Institute](https://www.publicmediainstitute.com/), 
 - Joseph Alfallah
 - Harrison Jones
 - Nick Hausman
+
+## Rights
+
+Source code dual-licensed under MIT (Xcode 7, Swift 2) or BSD (Xcode 11, Swift 5). StreamingKit reverse proxy available under AGPLv3 and kept in directory `packages/skipr`. All other creative assets copyright their respective owners. The text of the source code license is included in the file LICENSE in the source.
