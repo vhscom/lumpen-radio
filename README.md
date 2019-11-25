@@ -6,7 +6,7 @@ Never listen to a radio commercial again. The free [Lumpen Radio app](https://ap
 
 And StreamingKit reverse proxy...
 
-[![Skipr](https://codeberg.org/vhs/lumpen-radio/raw/branch/trunk/packages/skipr/skipr-logo-fs8.png)](https://codeberg.org/vhs/lumpen-radio/raw/branch/trunk/packages/skipr/)
+[![Skipr](https://codeberg.org/vhs/lumpen-radio/raw/branch/trunk/packages/skipr/skipr-logo-fs8.png)](https:///codeberg.org/vhs/lumpen-radio/src/branch/master/packages/skipr)
 
 ## About
 
