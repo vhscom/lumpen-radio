@@ -2,11 +2,11 @@
 
 Never listen to a radio commercial again. The free [Lumpen Radio app](https://appsto.re/us/NedV7.i) is here!
 
-![Lumpen Radio](https://codeberg.org/vhs/lumpen-radio/raw/branch/trunk/app-cover-fs8.png "Application simulated in iOS 13")
+[![Lumpen Radio](https://codeberg.org/vhs/lumpen-radio/raw/branch/trunk/app-cover-fs8.png "Application simulated in iOS 13")](https://vhs.codeberg.page/code/lumpen-radio/assets/5_6226640352183320745.mp4)
 
 And StreamingKit reverse proxy...
 
-![Skipr](https://codeberg.org/vhs/lumpen-radio/raw/branch/trunk/packages/skipr/skipr-logo-fs8.png)
+[![Skipr](https://codeberg.org/vhs/lumpen-radio/raw/branch/trunk/packages/skipr/skipr-logo-fs8.png)](https://codeberg.org/vhs/lumpen-radio/raw/branch/trunk/packages/skipr/)
 
 ## About
 
@@ -24,6 +24,10 @@ And StreamingKit reverse proxy...
 - Translations for English, Spanish, Chinese, Korean and German
 - Remote control via Bluetooth and compatible headset
 - Supports iPad and iPhone with iOS 8+
+
+## Installation
+
+Get the latest version from Apple. [Download it](https://appsto.re/us/NedV7.i) from the App Store now.
 
 ## Usage
 
@@ -99,31 +103,19 @@ To learn more about React Native and how this app is built check out [the slides
 
 ## Todo
 
-- [x] Add background playback support
-- [x] Show progress for initial connection
-- [x] Indicate progress for long-running ops
-- [x] Allow audio disruption for calls, etc.
-- [x] Automatically reconnect if disconnected
-- [x] Icon long-press restarts stream
-- [x] Support Control Center / Remote Control events (thanks to Wayne Wright for the suggestion)
-- [x] Reverse proxy audio with [Traefik](https://traefik.io/)
 - [ ] Add [Expo](https://expo.io/) and [TypeScript](https://www.typescriptlang.org/) support
 
 # Ideas
 
-- [ ] Press-and-hold button open modal after 1st stream restart
-- [ ] Long-pauses restart stream or select a back-up stream
-- [ ] Add now playing metadata (if available) from stream `http` headers
-- [ ] Provide on-air/off-air indication (stop animation if signal off-air)
+- [ ] Long-press opens modal with stream restart
+- [ ] Long-pauses restart stream or select target
+- [ ] Show playing metadata from stream headers
+- [ ] Stop background animation with disconnect
 
 ## Known issues
 
-- [x] [Background video delays device wake then turns black](https://github.com/brentvatne/react-native-video/issues/44).
-- [x] Audio stream does not automatically restart after some device interruptions (e.g. incoming call sent to voice mail)
-- [ ] Audio buffer out after 20 seconds of interrupted call time followed by 20 seconds of resumed play
-- [ ] Play button does not function when disconnected from the Internet
-- [ ] App appears to buffer indefinitely if playing and Internet connection restarted
-- [x] Launch screen skews on iPad
+- [ ] Stream stops playing after a 20s phone call
+- [x] Stream buffer timeout on connection restart
 
 ## Credits
 
