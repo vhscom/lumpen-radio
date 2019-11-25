@@ -4,10 +4,15 @@ Never listen to a radio commercial again. The free [Lumpen Radio app](https://ap
 
 ![Lumpen Radio](https://codeberg.org/vhs/lumpen-radio/raw/branch/trunk/app-cover-fs8.png "Application simulated in iOS 13")
 
+And StreamingKit reverse proxy...
+
+![Skipr](https://codeberg.org/vhs/lumpen-radio/raw/branch/trunk/packages/skipr/skipr-logo-fs8.png)
+
 ## About
 
+- [StreamingKit](https://github.com/tumtumtum/StreamingKit/) iOS audio provider
 - Built with [React Native](https://facebook.github.io/react-native/) and [Webpack](https://webpack.js.org/)
-- Created using [React Native Webpack Starter Kit](https://vhs.codeberg.page/code/react-native-webpack-starter-kit)
+- Created using [RN Webpack Starter Kit](https://vhs.codeberg.page/code/react-native-webpack-starter-kit)
 
 ## Features
 
@@ -101,8 +106,8 @@ To learn more about React Native and how this app is built check out [the slides
 - [x] Automatically reconnect if disconnected
 - [x] Icon long-press restarts stream
 - [x] Support Control Center / Remote Control events (thanks to Wayne Wright for the suggestion)
+- [x] Reverse proxy audio with [Traefik](https://traefik.io/)
 - [ ] Add [Expo](https://expo.io/) and [TypeScript](https://www.typescriptlang.org/) support
-- [ ] Reverse proxy audio using TLS with [Traefik](https://traefik.io/)
 
 # Ideas
 
