@@ -17,6 +17,7 @@ And StreamingKit reverse proxy...
 ## Features
 
 - Streams any `audio/mpeg` stream listed in `Constants.h`
+- Includes reverse proxy to update stream without app rebuild
 - Background audio playback and lock screen integration
 - Gorgeous video loop with AirPlay support
 - Intelligent handling of common audio interruptions
@@ -85,7 +86,6 @@ Learn more about [Submitting to App Store](https://vhs.codeberg.page/reflecting-
     │   ├── actions.es6             # Flux actions
     │   ├── main.es6                # JS application entry point
     │   └── styles.es6              # React Native Style Rules
-    ├── .eslintrc                   # JS linter configuration
     ├── .flowconfig                 # Facebook flow config file
     ├── .gitignore                  # VCS blacklist
     ├── Podfile                     # CocoaPods dependency specs
@@ -97,9 +97,7 @@ Learn more about [Submitting to App Store](https://vhs.codeberg.page/reflecting-
     ├── webpack-watch.js            # Filesystem watcher for JS
     └── webpack-config.js           # WebPack configuration
 
-### Resources
-
-To learn more about React Native and how this app is built check out [the slides](https://slides.com/vhs/streaming-audio-react-native/) originating from [my talk](https://www.meetup.com/React-Chicago/events/222510246/) on <time datetime="2015-06-30 18:00">30 Jun 2015</time>. There's also a [free Webcast](https://www.oreilly.com/pub/e/3483) on app construction given for O'Reilly Media on <time datetime="2015-08-27 18:00">27 Aug 2015</time>.
+Diagram created using [tree](https://mama.indstate.edu/users/ice/tree/) written by Steve Baker and contributors.
 
 ## Todo
 
@@ -119,7 +117,7 @@ To learn more about React Native and how this app is built check out [the slides
 
 ## Credits
 
-Designed and developed by VHS without fee for Public Media Institute.
+Designed and developed by VHS.
 
 Splash screen and vectors by [Jermiah Chiu](https://jeremiahchiu.com).<br>
 App interface and icon by [VHS](https://vhs.codeberg.page).
